@@ -1,0 +1,36 @@
+* {
+    font-family: monospace;
+    color: #aaaaaa;
+    background-color: #283032;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+body {
+    text-align: center;
+    font-size: 14px;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+}
+
+a:link {
+    color: #199878;
+}
+
+a:hover {
+    color: #09684a;
+}
+
+a:visited {
+    color: #0c5628df;
+}
+
+strong {
+    color: #eeeeee;
+}
+
+#fast {
+    display: inline-block;
+    text-align: left;
+    max-width: 95vw;
+}
