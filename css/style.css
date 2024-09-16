@@ -1,16 +1,17 @@
 * {
     font-family: monospace;
-    color: #aaaaaa;
+    color: #999999;
     background-color: #283032;
     text-align: center;
-    /* justify-content: center; */
+}
+
+strong {
+    color: #eeeeee;
 }
 
 body {
     text-align: center;
     font-size: 14px;
-    /* margin-left: 5%;
-    margin-right: 5%; */
 }
 
 a:link {
@@ -25,12 +26,38 @@ a:visited {
     color: #0c5628df;
 }
 
-strong {
-    color: #eeeeee;
+#dump {
+    width: 28vw;
+    height: 75vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#container {
+    width: 28vw;
+    height: 65vh;
+    border-radius: 30px;
+    border: 1px solid #ecf0f1;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
 }
 
 #fast {
-    display: inline-block;
     text-align: left;
-    max-width: 95vw;
+    min-height: 60vh;
+    min-width: 40vw;
+    padding: 20px;
+    background-color: #23292a;
+}
+
+#fast strong {
+    background-color: #23292a;
 }
