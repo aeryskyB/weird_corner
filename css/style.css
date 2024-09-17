@@ -27,14 +27,13 @@ a:visited {
 }
 
 #dump {
-    width: 28vw;
     height: 75vh;
     margin: 0 auto;
     align-items: center;
 }
 
 #container {
-    width: 28vw;
+    width: 400px;
     height: 65vh;
     border-radius: 30px;
     border: 1px solid #ecf0f1;
@@ -52,8 +51,8 @@ a:visited {
 
 #fast {
     text-align: left;
+    min-width: 400px;
     min-height: 60vh;
-    min-width: 40vw;
     padding: 20px;
     background-color: #23292a;
 }
