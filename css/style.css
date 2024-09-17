@@ -32,9 +32,9 @@ a:visited {
     align-items: center;
 }
 
-#container {
+#fast {
     width: 400px;
-    height: 65vh;
+    height: 60vh;
     border-radius: 30px;
     border: 1px solid #ecf0f1;
     margin: 0 auto;
@@ -43,21 +43,13 @@ a:visited {
     -ms-overflow-style: none;
     scrollbar-width: none;
     background-color: #23292a;
-}
-
-#container::-webkit-scrollbar {
-    display: none;
-}
-
-#fast {
     text-align: left;
     text-wrap: nowrap;
     min-width: 400px;
     min-height: 60vh;
     padding: 20px;
-    background-color: #23292a;
 }
 
-#fast strong {
-    background-color: #23292a;
+#fast::-webkit-scrollbar {
+    display: none;
 }
