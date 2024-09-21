@@ -50,6 +50,11 @@ a:visited {
     padding: 20px;
 }
 
+#fast strong {
+    color: #eeeeee;
+    background-color: #23292a;
+}
+
 #fast::-webkit-scrollbar {
     display: none;
 }
@@ -72,7 +77,12 @@ a:visited {
         min-height: 60vh;
         padding: 20px;
     }
-    
+
+    #fast strong {
+        color: #eeeeee;
+        background-color: #23292a;
+    }
+
     #fast::-webkit-scrollbar {
         display: none;
     }
