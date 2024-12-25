@@ -10,8 +10,16 @@ strong {
 }
 
 body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
     text-align: center;
     font-size: 14px;
+    animation: rest 1s cubic-bezier(0.8, 0, 0.8, 0.8);
 }
 
 a:link {
@@ -85,5 +93,47 @@ a:visited {
 
     #fast::-webkit-scrollbar {
         display: none;
+    }
+}
+
+#upa {
+    -webkit-animation: upa-dance 0.5s ease-out forwards;
+    animation: upa-dance 0.5s ease-out forwards;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes upa-dance {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@-webkit-keyframes upa-dance {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@keyframes rest {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+    }
+    100% {
+        opacity: 1;
     }
 }
