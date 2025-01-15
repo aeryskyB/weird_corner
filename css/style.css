@@ -1,6 +1,6 @@
 * {
     font-family: monospace;
-    color: #999999;
+    color: #aaaaaa;
     background-color: #283032;
     text-align: center;
 }
@@ -20,24 +20,31 @@ body {
     text-align: center;
     font-size: 14px;
     animation: rest 1s cubic-bezier(0.8, 0, 0.8, 0.8);
+    width: 80vw;
 }
 
 a:link {
-    color: #199878;
+    color: #22aa99;
 }
 
 a:hover {
-    color: #09684a;
+    color: #119988;
 }
 
 a:visited {
-    color: #0c5628df;
+    color: #056655;
 }
 
 #dump {
-    height: 75vh;
+    min-height: 75vh;
     margin: 0 auto;
     align-items: center;
+}
+
+#blog {
+    width: 70vw;
+    text-align: left;
+    margin: auto 3vw;
 }
 
 #fast {
@@ -136,4 +143,18 @@ a:visited {
     100% {
         opacity: 1;
     }
+}
+
+@-webkit-keyframes rest {
+    0% {
+        opacity: 0;
+        pointer-events: none; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+mjx-container.MathJax {
+    pointer-events: none;
 }
