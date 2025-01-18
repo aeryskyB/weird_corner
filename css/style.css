@@ -16,7 +16,7 @@
 }
 
 * {
-    font-family: consolas;
+    font-family: monospace, consolas;
     color: #aaaaaa;
     background-color: #283032;
     text-align: center;
@@ -63,7 +63,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #blog {
-    font-family: 'OpenDyslexic-Regular', cursive, consolas;
+    font-family: 'OpenDyslexic-Regular', cursive, monospace, consolas;
     font-size: 14px;
     width: 50vw;
     text-align: left;
@@ -71,17 +71,17 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #blog a {
-    font-family: 'OpenDyslexic-Regular', cursive, consolas;
+    font-family: 'OpenDyslexic-Regular', cursive, monospace, consolas;
     font-size: 14px;
 }
 
 #blog strong {
-    font-family: 'OpenDyslexic-Bold', cursive, consolas;
+    font-family: 'OpenDyslexic-Bold', cursive, monospace, consolas;
     font-size: 14px;
 }
 
 #blog em {
-    font-family: 'OpenDyslexic-Italic', cursive, consolas;
+    font-family: 'OpenDyslexic-Italic', cursive, monospace, consolas;
     font-size: 14px;
 }
 
@@ -114,20 +114,23 @@ a:link, a:visited, a:hover, a:active {
 }
 
 @media (max-width: 720px) {
+    * {
+        font-family: monospace, consolas;
+        font-size: 14px;
+    }
+
     #content {
         width: 100vw;
     }
 
     #blog {
         width: 80vw;
-        font-size: 12px;
         text-align: left;
         margin-left: 5vw;
         margin-right: 5vw;
     }
 
     #fast {
-        font-size: 12px;
         width: 90%;
         height: 60vh;
         /* border-radius: 30px; */
