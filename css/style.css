@@ -1,5 +1,22 @@
+@font-face {
+    font-family: 'OpenDyslexic-Regular';
+    src: url("../fonts/OpenDyslexic-Regular.woff2") format("woff2"),
+        url("../fonts/OpenDyslexic-Italic.woff2") format("woff2"),
+        url("../fonts/OpenDyslexic-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'OpenDyslexic-Italic';
+    src: url("../fonts/OpenDyslexic-Italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'OpenDyslexic-Bold';
+    src: url("../fonts/OpenDyslexic-Bold.woff2") format("woff2");
+}
+
 * {
-    font-family: monospace;
+    font-family: consolas;
     color: #aaaaaa;
     background-color: #283032;
     text-align: center;
@@ -17,10 +34,10 @@ body {
 }
 
 #content {
+    width: 70vw;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     animation: rest 1s cubic-bezier(0.8, 0, 0.8, 0.8);
-    width: 80vw;
 }
 
 a:link {
@@ -32,25 +49,47 @@ a:hover {
 }
 
 a:visited {
-    color: #056655;
+    color: #137c50;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
 }
 
 #dump {
-    min-height: 75vh;
-    margin: 0 auto;
+    min-height: 70vh;
+    /* margin: 0 auto; */
     align-items: center;
 }
 
 #blog {
-    width: 70vw;
+    font-family: 'OpenDyslexic-Regular', cursive, consolas;
+    font-size: 14px;
+    width: 50vw;
     text-align: left;
-    margin: auto 3vw;
+    margin-left: 10vw;
+}
+
+#blog a {
+    font-family: 'OpenDyslexic-Regular', cursive, consolas;
+    font-size: 14px;
+}
+
+#blog strong {
+    font-family: 'OpenDyslexic-Bold', cursive, consolas;
+    font-size: 14px;
+}
+
+#blog em {
+    font-family: 'OpenDyslexic-Italic', cursive, consolas;
+    font-size: 14px;
 }
 
 #fast {
+    font-size: 14px;
     width: 400px;
     height: 60vh;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     border: 1px solid #ecf0f1;
     margin: 0 auto;
     overflow-y: scroll;
@@ -74,11 +113,24 @@ a:visited {
     display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
+    #content {
+        width: 100vw;
+    }
+
+    #blog {
+        width: 80vw;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
     #fast {
-        width: 80%;
+        font-size: 12px;
+        width: 90%;
         height: 60vh;
-        border-radius: 30px;
+        /* border-radius: 30px; */
         border: 1px solid #ecf0f1;
         margin: 0 auto;
         overflow-y: scroll;
