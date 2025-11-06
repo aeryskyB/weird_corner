@@ -164,6 +164,8 @@ a:link, a:visited, a:hover, a:active {
     opacity: 1;
     position: absolute;
     z-index: 1;
+    top: 45vh;
+    left: 45vw;
 }
 
 @keyframes upa-dance {
