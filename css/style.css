@@ -159,13 +159,15 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #upa {
+    width: 100px;
+    height: 100px;
     -webkit-animation: upa-dance 0.5s ease-out forwards;
     animation: upa-dance 0.5s ease-out forwards;
     opacity: 1;
     position: absolute;
     z-index: 1;
-    top: 45vh;
-    left: 45vw;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 50px);
 }
 
 @keyframes upa-dance {
